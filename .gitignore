@@ -19,3 +19,6 @@ build/
 
 # Generated
 README.rst
+
+# Mypy
+.mypy_cache
