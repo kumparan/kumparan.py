@@ -13,7 +13,10 @@ setup(
     packages=[
         "kumparan"
     ],
-    install_requires=[],
+    install_requires=[
+        "ujson==1.35",
+        "google-cloud==0.32.0"
+    ],
     classifiers=[
         "License :: OSI Approved :: BSD License",
         "Programming Language :: Python :: 3.6"
