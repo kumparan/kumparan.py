@@ -3,7 +3,7 @@ from setuptools import setup
 # Package details
 setup(
     name="kumparan",
-    version="0.0.2",
+    version="0.0.3",
     author="Bayu Aldi Yansyah",
     author_email="bayualdiyansyah@gmail.com",
     url="https://github.com/kumparan/kumparan.py",
