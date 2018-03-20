@@ -19,14 +19,18 @@ upload-to-testpypi: README.rst
 	python setup.py sdist upload -r testpypi
 .PHONY: upload-to-testpypi
 
+lint:
+	flake8
+
 # Perform the static type checker
 type-check:
 	MYPYPATH=stubs mypy kumparan/
 .PHONY: type-check
 
 # Perfrom the test
-test: type-check
+test: type-check lint
 	python tests/service_account_test.py
+	python tests/utils_test.py
 .PHONY: test
 
 
