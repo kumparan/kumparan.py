@@ -27,8 +27,13 @@ type-check:
 	MYPYPATH=stubs mypy kumparan/
 .PHONY: type-check
 
+
+stackdriver-test: type-check lint
+	rm -f *.log
+	python tests/stackdriver_test.py
+
 # Perfrom the test
-test: type-check lint
+test: type-check lint stackdriver-test
 	python tests/service_account_test.py
 	python tests/utils_test.py
 .PHONY: test
