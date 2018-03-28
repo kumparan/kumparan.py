@@ -19,6 +19,11 @@ build/
 
 # Generated
 README.rst
+*.log
+
+# Visual Studio Code
+.vscode
+*.code-workspace
 
 # Mypy
 .mypy_cache
