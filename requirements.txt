@@ -76,6 +76,6 @@ sphinx-autobuild==0.7.1
 sphinxcontrib-websupport==1.0.1
 tornado==5.0.1
 typed-ast==1.1.0
-ujson==1.35
+ujson==5.4.0
 urllib3==1.22
 watchdog==0.8.3

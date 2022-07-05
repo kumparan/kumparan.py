@@ -14,7 +14,7 @@ setup(
         "kumparan"
     ],
     install_requires=[
-        "ujson==1.35",
+        "ujson==5.4.0",
         "google-cloud==0.32.0"
     ],
     classifiers=[
